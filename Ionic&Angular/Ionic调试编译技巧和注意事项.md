@@ -18,18 +18,18 @@ fatal: Unable to find remote helper for 'git+https'
 
 ```
 
-如果在后面家 `--nofetch` 就能成功
+如果在后面家 `--nofetch` 就能成功，npm install 不行，就改为 cnpm install
 
 ```shell
-$ ionic cordova plugin add cordova-alipay-base --variable APP_ID=2017101209250000 --nofetch
-$ npm install --save @ionic-native/alipay
+$ ionic cordova plugin add cordova-alipay-base --variable ALI_PID=2017101209250000 --nofetch
+$ cnpm install --save @ionic-native/alipay
 ```
 
 如果不成功，直接从github安装：
 
 ```shell
 cordova plugin add https://github.com/pipitang/cordova-alipay-base --variable ALI_PID=2017101209250000 --nofetch
-$ npm install --save @ionic-native/alipay
+$ cnpm install --save @ionic-native/alipay
 ```
 
 # 调试和发布
